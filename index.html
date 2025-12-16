@@ -205,18 +205,15 @@
                    <!-- 按鈕 -->
 							  
 						<footer>
-							<a href="#" class="button">繼續閱讀</a>
+							  <button id="readMoreBtn" class="button">繼續閱讀</button>
 						</footer>
 					</article>
 
 				</div>
                    <script>
-                   const btn = document.getElementById("readMoreBtn");
-                   const full = document.getElementById("full-content");
-
-                   btn.addEventListener("click", () => {
-                   full.style.display = "block";   // 顯示全文
-                   btn.style.display = "none";     // 隱藏按鈕
+                   document.getElementById("readMoreBtn").addEventListener("click", function () {
+    document.getElementById("full-content").style.display = "block";
+    this.style.display = "none";
                    });
                    </script>
 			
