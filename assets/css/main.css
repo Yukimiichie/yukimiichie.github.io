@@ -3186,3 +3186,12 @@ input, select, textarea {
   margin-top: 2.2em;   /* ← 關鍵：拉開與上一段距離 */
   margin-bottom: 0.6em;
 }
+
+.hero-title{
+  line-height: 1.4;
+}
+
+.hero-highlight{
+  display: block;     /* 關鍵：強制換行 */
+  margin-top: 0.3em;  /* 行距微調 */
+}
