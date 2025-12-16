@@ -3226,3 +3226,8 @@ input, select, textarea {
   margin-top: 0.3em;
   letter-spacing: 0.02em;
 }
+
+/* 只影響 #main 這段文章的標題與下一段距離 */
+#main header h2{
+  margin-bottom: 0.5em;  /* 約 0.5 行高 */
+}
