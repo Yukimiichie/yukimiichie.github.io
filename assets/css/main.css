@@ -3158,44 +3158,22 @@ input, select, textarea {
 }
 
 /* 主視覺條列（品牌風） */
-.lead-list{
-  list-style: none;
+/* 🔒 統一所有理念型清單（點點） */
+.unified-list{
+  list-style: none !important;
   padding-left: 0;
   margin: 1.2em 0;
 }
 
-.lead-list li{
-  position: relative;
-  padding-left: 1.8em;
-  margin: 0.8em 0;
-  line-height: 1.75;
-  font-size: 1.05em; /* 與 lead-sub 一致 */
-}
-
-.lead-list li::before{
-  content: "—";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-weight: 600;
-  opacity: 0.6;
-}
-
-
-.goal-list{
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.goal-list li{
+.unified-list li{
   position: relative;
   padding-left: 1.6em;
   margin: 0.8em 0;
   line-height: 1.75;
 }
 
-.goal-list li::before{
+/* 統一的點點符號（日系） */
+.unified-list li::before{
   content: "・";
   position: absolute;
   left: 0;
