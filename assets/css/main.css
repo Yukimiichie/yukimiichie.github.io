@@ -3180,3 +3180,24 @@ input, select, textarea {
   font-weight: 600;
   opacity: 0.6;
 }
+
+
+.goal-list{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.goal-list li{
+  position: relative;
+  padding-left: 1.6em;
+  margin: 0.8em 0;
+  line-height: 1.75;
+}
+
+.goal-list li::before{
+  content: "・";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
