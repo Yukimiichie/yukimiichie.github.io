@@ -3201,7 +3201,7 @@ input, select, textarea {
   content: "・";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0.15em;   /* ← 微調，讓點點更垂直置中 */
   opacity: 0.7;
 }
 
