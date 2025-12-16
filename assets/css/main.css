@@ -3143,55 +3143,68 @@ input, select, textarea {
   overflow: hidden;
   transition: max-height 0.6s ease;
 }
+/* =========================
+   一路的想像與實現：排版統一（只影響 #main）
+   ========================= */
 
-/* 引言（最大） */
-.intro-quote{
-  font-size: 1.4em;
-  line-height: 1.4;
+/* 文章區域：統一字體/行高（中文閱讀舒適） */
+#main{
+  line-height: 1.85;
 }
 
-/* 次重點段落（約為引言的 2/3） */
-.lead-sub{
+/* 段落：統一段距，避免忽大忽小 */
+#main p{
+  margin: 0 0 1.2em 0;
+}
+
+/* 引言段（「真正的旅程…」那段） */
+#main .intro-quote{
+  font-size: 1.55em;
+  line-height: 1.65;
+  margin-bottom: 1.2em;
+}
+
+/* 次重點段落（我們熱愛… 或你指定的 lead-sub） */
+#main .lead-sub{
+  font-size: 1.05em;      /* 約為引言 2/3 的體感層級 */
+  line-height: 1.9;
+  margin: 0 0 1.3em 0;
+}
+
+/* 小標題（我的目標是）拉開與上一段距離 */
+#main .goal-title{
   font-size: 1.2em;
-  line-height: 1.75;
-  margin-top: 1em;
+  font-weight: 600;
+  margin: 2.0em 0 0.8em 0;
 }
 
-/* 主視覺條列（品牌風） */
-/* 🔒 統一所有理念型清單（點點） */
-.unified-list{
+/* =========================
+   統一清單（點點・）
+   ========================= */
+
+#main .unified-list{
   list-style: none !important;
   padding-left: 0;
-  margin: 1.2em 0;
+  margin: 1.1em 0 1.4em 0;
 }
 
-.unified-list li{
+#main .unified-list li{
   position: relative;
   padding-left: 1.6em;
-  margin: 0.8em 0;
-  line-height: 1.75;
+  margin: 0.75em 0;
+  line-height: 1.9;
 }
 
-/* 統一的點點符號（日系） */
-.unified-list li::before{
+/* 點點符號（日系） */
+#main .unified-list li::before{
   content: "・";
   position: absolute;
   left: 0;
   top: 0;
+  opacity: 0.7;
 }
 
-.goal-title{
-  font-size: 1.15em;
-  font-weight: 600;
-  margin-top: 2.2em;   /* ← 關鍵：拉開與上一段距離 */
-  margin-bottom: 0.6em;
-}
-
-.hero-title{
-  line-height: 1.4;
-}
-
-.hero-highlight{
-  display: block;     /* 關鍵：強制換行 */
-  margin-top: 0.3em;  /* 行距微調 */
+/* 如果你有清單項目裡面含有 <br>，避免行距亂掉 */
+#main .unified-list br{
+  display: none;
 }
