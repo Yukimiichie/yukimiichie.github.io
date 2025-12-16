@@ -3138,11 +3138,8 @@ input, select, textarea {
 	}
 
 /* Read More 展開內容 */
-.expand-content{
+.expand-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height .6s ease;
-}
-.expand-content.open{
-  max-height: 2000px; /* 足夠大即可 */
+  transition: max-height 0.6s ease;
 }
