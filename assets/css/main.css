@@ -3193,6 +3193,7 @@ input, select, textarea {
   padding-left: 1.6em;
   margin: 0.75em 0;
   line-height: 1.9;
+  font-size: 1.05em; /* ✅ 與 lead-sub 完全一致 */
 }
 
 /* 點點符號（日系） */
