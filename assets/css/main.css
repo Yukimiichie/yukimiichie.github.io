@@ -3152,7 +3152,7 @@ input, select, textarea {
 
 /* 次重點段落（約為引言的 2/3） */
 .lead-sub{
-  font-size: 1.05em;
+  font-size: 1.2em;
   line-height: 1.75;
   margin-top: 1em;
 }
