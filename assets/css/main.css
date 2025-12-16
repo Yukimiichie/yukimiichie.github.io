@@ -3146,8 +3146,8 @@ input, select, textarea {
 
 /* 引言（最大） */
 .intro-quote{
-  font-size: 1.6em;
-  line-height: 1.6;
+  font-size: 1.4em;
+  line-height: 1.4;
 }
 
 /* 次重點段落（約為引言的 2/3） */
