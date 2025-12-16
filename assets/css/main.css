@@ -3210,15 +3210,19 @@ input, select, textarea {
   display: none;
 }
 
-/* Hero 主標 */
+/* Hero 區整體 */
 .hero-title{
-  font-size: 1.1em;   /* 幾乎等於 lead-sub */
-  line-height: 1.5;
+  font-size: 1em;          /* ← 關鍵：跟功能描述線一樣大 */
+  line-height: 1.6;
+  font-weight: 400;
+  margin: 0;
 }
 
+/* 主角關鍵字 */
 .hero-highlight{
   display: block;
-  font-size: 2.2em;   /* 真正的大標 */
+  font-size: 2.3em;        /* Hero 主標 */
   font-weight: 600;
   margin-top: 0.3em;
+  letter-spacing: 0.02em;
 }
