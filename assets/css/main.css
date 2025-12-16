@@ -3212,20 +3212,13 @@ input, select, textarea {
 
 /* Hero 主標 */
 .hero-title{
-  font-size: 2.2em;      /* 大標題尺寸（可微調） */
-  line-height: 1.25;
-  margin-bottom: 0.6em;
+  font-size: 1.1em;   /* 幾乎等於 lead-sub */
+  line-height: 1.5;
 }
 
-/* 上行（較小，接近主文） */
-.hero-title{
-  font-weight: 500;
-}
-
-/* 關鍵字：下行放大 */
 .hero-highlight{
   display: block;
-  font-size: 1.8em;      /* 相對於上行放大 */
+  font-size: 2.2em;   /* 真正的大標 */
   font-weight: 600;
-  margin-top: 0.25em;
+  margin-top: 0.3em;
 }
