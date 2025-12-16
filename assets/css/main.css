@@ -3179,3 +3179,10 @@ input, select, textarea {
   left: 0;
   top: 0;
 }
+
+.goal-title{
+  font-size: 1.15em;
+  font-weight: 600;
+  margin-top: 2.2em;   /* ← 關鍵：拉開與上一段距離 */
+  margin-bottom: 0.6em;
+}
