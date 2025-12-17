@@ -3239,10 +3239,10 @@ input, select, textarea {
 
 /* 主標題：一路的想像與實現 */
 #main header h2{
-  font-size: 1.2em;   /* 縮小為目前的 4/5 */
+  font-size: 1.8em;   /* 縮小為目前的 4/5 */
 }
 
 /* 引言段：真正的旅程是深入體驗… */
 #main .intro-quote{
-  font-size: 1.2em;   /* 同樣縮小為 4/5 */
+  font-size: 1.4em;   /* 同樣縮小為 4/5 */
 }
