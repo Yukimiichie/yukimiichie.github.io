@@ -3267,24 +3267,34 @@ input, select, textarea {
 }
 
 
-/* ===== CTA：圓角長方形（取代原本 circled 圓形） ===== */
+/* ===== 高質感 CTA：橢圓 / 膠囊按鈕（覆蓋 Helios circled） ===== */
 .button.circled.pill {
   width: auto !important;
   height: auto !important;
   min-width: unset !important;
 
-  padding: 0.9em 2.4em;   /* ← 外圍空間變大的關鍵 */
+  padding: 0.9em 2.4em;          /* 外圍留白，避免擠字 */
   line-height: 1.2;
 
-  border-radius: 999px;  /* 橢圓 / 膠囊 */
+  border-radius: 999px;          /* 橢圓膠囊 */
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  white-space: nowrap;   /* ❗防止跳行 */
+  white-space: nowrap;           /* 防止文字跳行 */
+
+  font-weight: 500;              /* 質感字重 */
+  letter-spacing: 0.08em;        /* 日系高級字距 */
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* 柔和立體感 */
+  transition: 
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
 }
 
-/* hover 微動態 */
+/* Hover：微浮起＋陰影加深 */
 .button.circled.pill:hover {
   transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.22);
 }
