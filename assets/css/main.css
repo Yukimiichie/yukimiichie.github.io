@@ -3246,3 +3246,13 @@ input, select, textarea {
 #main .intro-quote{
   font-size: 1.4em;   /* 同樣縮小為 4/5 */
 }
+
+/* ===== 橢圓型 CTA（覆蓋 circled）===== */
+.button.circled.pill {
+  width: auto;              /* 解除固定寬度 */
+  height: auto;             /* 解除固定高度 */
+  padding: 0.85em 2.2em;    /* 橢圓關鍵 */
+  border-radius: 999px;     /* 藥丸型 */
+  line-height: 1.2;
+  display: inline-block;
+}
