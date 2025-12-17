@@ -3249,10 +3249,19 @@ input, select, textarea {
 
 /* ===== 橢圓型 CTA（覆蓋 circled）===== */
 .button.circled.pill {
-  width: auto;              /* 解除固定寬度 */
-  height: auto;             /* 解除固定高度 */
-  padding: 0.85em 2.2em;    /* 橢圓關鍵 */
-  border-radius: 999px;     /* 藥丸型 */
+  width: auto;
+  height: auto;
+  padding: 0.85em 2.2em;
+  border-radius: 999px;
   line-height: 1.2;
   display: inline-block;
+
+  font-weight: 500;
+  letter-spacing: 0.05em;
+
+  transition: transform 0.2s ease;
+}
+
+.button.circled.pill:hover {
+  transform: translateY(-1px);
 }
