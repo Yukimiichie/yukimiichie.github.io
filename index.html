@@ -372,29 +372,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-		<!-- ✅ 你的自訂 JS（放這裡） -->
-        <script>
-              document.addEventListener("DOMContentLoaded", function () {
-              const btn = document.getElementById("readMoreBtn");
-              const content = document.getElementById("full-content");
-               if (!btn || !content) return;
-
-              btn.addEventListener("click", function (e) {
-              e.preventDefault();
-
-              if (!content.classList.contains("open")) {
-        // 展開
-               content.classList.add("open");
-               content.style.maxHeight = content.scrollHeight + "px";
-               btn.textContent = "收合內容";
-                } else {
-        // 收合
-                 content.style.maxHeight = "0px";
-                 content.classList.remove("open");
-                btn.textContent = "繼續閱讀";
-                    }
-                });
-               });
-         </script>
+	
 	</body>
 </html>
