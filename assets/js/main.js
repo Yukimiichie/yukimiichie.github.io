@@ -46,6 +46,12 @@
 	// Scrolly.
 		$('.scrolly').scrolly();
 
+	// Shared seasonal navigation helpers.
+		if ($('.site-nav').length) {
+			$('<a href="#page-wrapper" class="back-to-top" aria-label="回到頁面最上方"><span class="icon solid fa-chevron-up" aria-hidden="true"></span></a>')
+				.appendTo($body);
+		}
+
 	// Nav.
 
 		// Button.

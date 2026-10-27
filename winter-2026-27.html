@@ -1,243 +1,121 @@
 <!DOCTYPE HTML>
-<!--
-	Snow season landing page for Yukimi Ichie.
-	Built on the existing Helios site structure.
--->
 <html lang="zh-Hant">
 	<head>
 		<title>2026–27 北海道雪季｜雪見一會</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="雪見一會 2026–27 北海道雪季：雙板、單板私人滑雪體驗、雪地攝影與中文旅程支援。" />
+		<meta name="description" content="雪見一會 2026–27 北海道雪季：私人滑雪教學、雪地體驗支援、日本文化體驗與滑雪攝影。" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/winter-2026-27.css" />
+		<link rel="stylesheet" href="assets/css/winter-2026-27.css?v=20261027-13" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="winter-page is-preload">
+	<body class="winter-page winter-landing-page is-preload">
 		<div id="page-wrapper">
+			<nav class="site-nav" aria-label="網站主要導覽"><div class="site-nav__links"><a href="index.html">首頁</a><a href="winter-2026-27.html" aria-current="page">2026–27 雪季</a><a href="snow-photo.html">隨身紀錄</a><a href="japan-culture.html">日式文化</a><a href="membership.html">會員介紹</a><a href="About-us.html">一路的想像與實現</a><a href="index.html#contact">與我們聊聊</a></div></nav>
+			<section class="home-showcase winter-campaign-showcase" aria-label="2026–27 北海道雪季主題輪播">
+				<div class="home-showcase__track">
+					<a id="winter-campaign" class="home-showcase__panel home-showcase__panel--winter-campaign" href="#services" aria-label="查看 2026–27 北海道雪季服務">
+						<span class="home-showcase__content">
+							<span class="home-showcase__eyebrow">2026–27 HOKKAIDO WINTER</span>
+							<strong>北海道滑雪<br />一起滑進雪國</strong>
+							<span class="home-showcase__summary">Ski・Snowboard 雪季體驗</span>
+						</span>
+					</a>
 
-			<header id="winter-hero">
-				<nav id="nav" aria-label="主要選單">
-					<ul>
-						<li><a href="index.html">首頁</a></li>
-						<li><a href="#services">雪季服務</a></li>
-						<li><a href="#plans">服務方案</a></li>
-						<li><a href="#faq">常見問題</a></li>
-						<li><a href="#contact">預約諮詢</a></li>
-					</ul>
-				</nav>
+					<a id="winter-ski-service" class="home-showcase__panel home-showcase__panel--ski" href="ski-snowboard.html" aria-label="查看 Ski 與 Snowboard 服務">
+						<span class="home-showcase__content">
+							<span class="home-showcase__eyebrow">SKI &amp; SNOWBOARD</span>
+							<strong>滑雪體驗</strong>
+							<span>私人／小團體教學，依照程度與同行成員安排</span>
+						</span>
+					</a>
 
-				<div class="winter-hero__inner container">
-					<p class="winter-eyebrow">YUKIMI ICHIE · HOKKAIDO</p>
-					<h1><span>2026–27</span> 北海道雪季</h1>
-					<p class="winter-hero__lead">在粉雪之間，為你留下一次真正屬於自己的相遇。</p>
-					<div class="winter-actions">
-						<a href="#plans" class="button primary scrolly">查看雪季方案</a>
-						<a href="#contact" class="button ghost scrolly">預約諮詢</a>
-					</div>
-					<p class="winter-note">2026–27 雪季服務內容將依雪況、場地規範與實際可預約時段安排。</p>
+					<a id="winter-photo-service" class="home-showcase__panel home-showcase__panel--photo" href="snow-photo.html" aria-label="查看隨身影像紀錄服務">
+						<span class="home-showcase__content">
+							<span class="home-showcase__eyebrow">SNOW MEMORIES</span>
+							<strong>隨身紀錄拍攝</strong>
+							<span>把滑行、笑容與同行片刻，留成旅程之後仍能重溫的畫面</span>
+						</span>
+					</a>
+
+					<a id="winter-culture-service" class="home-showcase__panel home-showcase__panel--culture" href="japan-culture.html" aria-label="查看日本文化體驗服務">
+						<span class="home-showcase__content">
+							<span class="home-showcase__eyebrow">JAPAN CULTURE</span>
+							<strong>日式文化活動</strong>
+							<span>從茶道、和服到和菓子，感受日本文化的細緻日常</span>
+						</span>
+					</a>
+
+					<a id="winter-member-program" class="home-showcase__panel home-showcase__panel--membership" href="membership.html" aria-label="進入雪見一會會員介紹頁">
+						<span class="home-showcase__content">
+							<span class="home-showcase__eyebrow">YUKIMI ICHIE MEMBERSHIP</span>
+							<strong>Social／Gold<br />會員介紹</strong>
+							<span>兩種入會方式，共享指定服務會員價格</span>
+						</span>
+					</a>
 				</div>
-			</header>
+
+				<nav class="home-showcase__nav" aria-label="雪季主題切換">
+					<a class="home-showcase__dot" href="#winter-campaign" data-showcase-index="0" aria-label="查看 2026–27 北海道雪季" aria-current="true"><span>2026–27 北海道雪季</span></a>
+					<a class="home-showcase__dot" href="#winter-ski-service" data-showcase-index="1" aria-label="查看滑雪體驗"><span>滑雪體驗</span></a>
+					<a class="home-showcase__dot" href="#winter-photo-service" data-showcase-index="2" aria-label="查看隨身紀錄拍攝"><span>隨身紀錄拍攝</span></a>
+					<a class="home-showcase__dot" href="#winter-culture-service" data-showcase-index="3" aria-label="查看日式文化活動"><span>日式文化活動</span></a>
+					<a class="home-showcase__dot" href="#winter-member-program" data-showcase-index="4" aria-label="查看會員介紹"><span>會員介紹</span></a>
+				</nav>
+				<button class="home-showcase__arrow home-showcase__arrow--prev" type="button" aria-label="上一張 Banner"><span class="icon solid fa-chevron-left" aria-hidden="true"></span></button>
+				<button class="home-showcase__arrow home-showcase__arrow--next" type="button" aria-label="下一張 Banner"><span class="icon solid fa-chevron-right" aria-hidden="true"></span></button>
+			</section>
 
 			<main>
-				<section class="winter-intro winter-section">
-					<div class="container winter-split">
-						<div class="winter-copy">
-							<p class="winter-kicker">一期一會，雪中相見</p>
-							<h2>不只是學會滑雪，<br />而是安心走進北海道的冬天</h2>
-							<p>雪見一會以台灣旅客熟悉的語言與節奏，陪伴你從行前了解、雪地體驗到影像紀錄。無論第一次站上雪板，或希望更自在地享受雪道，我們都從你的經驗、同行成員與旅行期待出發，討論適合的安排。</p>
-							<ul class="winter-points">
-								<li>以同行親友為單位，重視專屬感與溝通品質</li>
-								<li>繁體中文溝通，降低海外雪地體驗的不安</li>
-								<li>滑雪、影像紀錄與旅程需求可一起討論</li>
-							</ul>
-						</div>
-						<figure class="winter-photo-card">
-							<img src="images/pic06.jpg" alt="北海道雪地旅程景色" />
-							<figcaption>讓每一次雪中相遇，都成為值得珍藏的旅程片段。</figcaption>
-						</figure>
+				<section id="services" class="winter-section winter-services"><div class="container">
+					<header class="winter-section__header"><p class="winter-kicker">2026–27 SERVICES &amp; PRICING</p><h2>我們的服務</h2><p>精選服務項目與待正式確認的初版參考價格。Social Member 與 Gold Member 在指定服務享有相同會員價格。</p></header>
+					<div class="winter-service-price-grid">
+						<article class="winter-service-price-card winter-service-price-card--lesson">
+							<div class="winter-service-price-card__media"><img src="images/pic09.jpg" alt="私人與小團體滑雪教學" /><span class="winter-service-icon icon solid fa-skiing" aria-hidden="true"></span></div>
+							<div class="winter-service-price-card__body"><span class="winter-number">01 · SKI / SNOWBOARD</span><h3>滑雪教練課程</h3><p>私人／小團體滑雪教學，依程度與同行組成討論雙板或單板課程。</p><div class="winter-prices"><span class="winter-price-member">會員價<strong>¥68,000 起</strong></span><span>一般參考價<strong>¥120,000 起</strong></span></div><a href="index.html#contact" class="winter-card-link">詢問滑雪課程</a></div>
+						</article>
+						<article class="winter-service-price-card winter-service-price-card--support">
+							<div class="winter-service-price-card__media"><img src="images/optimized/pic02-1200.jpg" alt="雪場選擇與雪地同行支援" /><span class="winter-service-icon icon solid fa-mountain" aria-hidden="true"></span></div>
+							<div class="winter-service-price-card__body"><span class="winter-number">02 · SNOW SUPPORT</span><h3>滑雪體驗支援</h3><p>雪場選擇、雪地同行與現場協助；此項為旅程支援，並非滑雪教學服務。</p><div class="winter-prices"><span class="winter-price-member">會員價<strong>¥18,000 起</strong></span><span>一般參考價<strong>¥30,000 起</strong></span></div><a href="index.html#contact" class="winter-card-link">詢問體驗支援</a></div>
+						</article>
+						<article class="winter-service-price-card winter-service-price-card--culture">
+							<div class="winter-service-price-card__media"><img src="images/pic03.jpg" alt="茶道和服與和菓子等日本文化體驗" /><span class="winter-service-icon icon solid fa-mug-hot" aria-hidden="true"></span></div>
+							<div class="winter-service-price-card__body"><span class="winter-number">03 · JAPAN CULTURE</span><h3>日本文化體驗</h3><p>茶道、和服、和菓子等文化體驗，實際內容依諮詢與可預約狀況確認。</p><div class="winter-prices"><span class="winter-price-member">會員價<strong>¥15,000／人起</strong></span><span>一般參考價<strong>¥20,000／人起</strong></span></div><a href="index.html#contact" class="winter-card-link">詢問文化體驗</a></div>
+						</article>
+						<article class="winter-service-price-card winter-service-price-card--photo">
+							<div class="winter-service-price-card__media"><img src="images/optimized/pic08-teeth-whitened-1200.jpg" alt="滑雪旅程攝影紀錄" /><span class="winter-service-icon icon solid fa-camera" aria-hidden="true"></span></div>
+							<div class="winter-service-price-card__body"><span class="winter-number">04 · SNOW PHOTO</span><h3>滑雪攝影加購</h3><p>記錄滑行與同行片刻，須搭配滑雪相關服務，不獨立接受攝影預約。</p><div class="winter-prices winter-prices--single"><span class="winter-price-member">加購價<strong>¥18,000 起</strong></span></div><a href="index.html#contact" class="winter-card-link">詢問拍照加購</a></div>
+						</article>
 					</div>
-				</section>
+					<p class="winter-plan-note winter-plan-note--light">※ 上述金額為待正式確認的初版報價。雪票、裝備、交通、保險及其他費用是否包含，將於正式方案公告時逐項說明。</p>
+					<p class="winter-disclaimer winter-disclaimer--light">實際服務地點與內容須依各雪場規範、商業活動相關許可確認結果、天候及可預約狀況安排；送出諮詢不代表預約成立。</p>
+				</div></section>
 
-				<section id="services" class="winter-section winter-section--blue">
-					<div class="container">
-						<header class="winter-section__header">
-							<p class="winter-kicker">SNOW EXPERIENCE</p>
-							<h2>選擇你的滑行方式</h2>
-							<p>雙板或單板，都從你的程度與目標開始規劃。</p>
-						</header>
-						<div class="winter-service-grid">
-							<article class="winter-service-card">
-								<img src="images/pic01.jpg" alt="北海道雪地滑雪體驗" />
-								<div>
-									<span class="winter-number">01</span>
-									<h3>雙板滑雪 Ski</h3>
-									<p>適合初次接觸雪地、親子同行，或想重新建立基礎動作的旅客。課程節奏將依程度與當日狀況調整。</p>
-								</div>
-							</article>
-							<article class="winter-service-card">
-								<img src="images/pic05.jpg" alt="北海道雪季裝備與滑雪體驗" />
-								<div>
-									<span class="winter-number">02</span>
-									<h3>單板滑雪 Snowboard</h3>
-									<p>從站姿、平衡、煞車到轉彎，循序感受單板滑行的節奏。已有經驗者也可先說明希望加強的方向。</p>
-								</div>
-							</article>
-						</div>
-					</div>
-				</section>
+				<section class="winter-reference-benefits"><div class="container winter-reference-benefits__grid">
+					<article><span class="icon solid fa-handshake" aria-hidden="true"></span><div><h3>會員價格資訊銜接</h3><p>若適用服務提供經確認的會員優惠，將於諮詢時依條件說明。</p></div></article>
+					<article><span class="icon solid fa-crown" aria-hidden="true"></span><div><h3>Social／Gold 會員優惠</h3><p>兩種會員在指定服務享有相同會員價格；其他內容依會員頁公告。</p></div></article>
+					<article><span class="icon solid fa-clipboard-list" aria-hidden="true"></span><div><h3>依需求提供服務建議</h3><p>依日期、人數、經驗與感興趣的項目，討論適合的安排與報價。</p></div></article>
+				</div></section>
 
-				<section class="winter-section">
-					<div class="container winter-feature-row">
-						<div class="winter-feature-media">
-							<img src="images/pic08.jpg" alt="雪地中的安心陪伴" />
-						</div>
-						<div class="winter-copy">
-							<p class="winter-kicker">PRIVATE LESSON</p>
-							<h2>私人滑雪教練服務</h2>
-							<p>以較充裕的溝通時間，照顧每位同行者的學習速度與雪地適應狀況。適合希望保有旅程彈性、重視隱私，或有不同程度成員同行的旅客。</p>
-							<div class="winter-mini-grid">
-								<div><strong>行前溝通</strong><span>確認經驗、需求與同行組成</span></div>
-								<div><strong>彈性節奏</strong><span>依學習狀況安排練習進度</span></div>
-								<div><strong>安全優先</strong><span>配合雪況與現場規範調整</span></div>
-								<div><strong>中文陪伴</strong><span>用熟悉的語言理解每一步</span></div>
-							</div>
-							<p class="winter-disclaimer">實際服務地點與內容須依各雪場規範、商業活動相關許可確認結果、天候及可預約狀況安排；送出諮詢不代表預約成立。</p>
-						</div>
-					</div>
-				</section>
+				<section class="winter-exclusions"><div class="container winter-exclusions__inner"><div><span class="icon solid fa-exclamation-circle" aria-hidden="true"></span><strong>費用不包含項目</strong><small>除另有明確說明外</small></div><ul><li>雪票</li><li>裝備租借</li><li>交通</li><li>住宿</li><li>餐飲</li><li>保險</li><li>其他第三方費用</li></ul></div><p>價格依日期、場地、服務安排、人數與實際狀況調整，實際報價以確認後為準。</p></section>
 
-				<section class="winter-section winter-story">
-					<div class="container winter-feature-row winter-feature-row--reverse">
-						<div class="winter-feature-media winter-feature-media--wide">
-							<img src="images/pic02.jpg" alt="北海道旅程影像紀錄" />
-						</div>
-						<div class="winter-copy">
-							<p class="winter-kicker">SNOW MEMORIES</p>
-							<h2>雪地攝影與影像紀錄</h2>
-							<p>不只記錄滑行成果，也留下出發前的期待、雪地裡的笑聲，以及與重要之人共享冬日的片刻。拍攝形式、時數與交付內容將在諮詢時依需求確認。</p>
-							<p class="winter-quote">「旅程會結束，影像讓那一天的溫度繼續留下。」</p>
-						</div>
-					</div>
-				</section>
+				<section id="faq" class="winter-section winter-faq"><div class="container winter-faq__layout"><header><p class="winter-kicker">FAQ</p><h2>出發前，<br />你可能想知道</h2></header><div class="winter-faq__items">
+					<details><summary>完全沒有滑雪經驗，也適合嗎？</summary><p>可以。諮詢時請告訴我們是否第一次接觸雪地、同行人數與年齡組成，我們會依實際條件討論合適的安排。</p></details>
+					<details><summary>雙板與單板應該怎麼選？</summary><p>兩者有不同的入門感受。你可以依旅行目標、過往運動經驗與同行者選擇；還不確定時，也可先在諮詢中討論。</p></details>
+					<details><summary>目前可以在哪些北海道雪場預約？</summary><p>服務雪場與商業活動相關許可仍在確認中，將依各雪場規範及實際可預約狀況安排。目前不預先承諾特定雪場。</p></details>
+					<details><summary>頁面價格已經確定了嗎？</summary><p>目前顯示的是待正式確認的初版報價，最終費用與包含項目將在諮詢時依服務內容確認。</p></details>
+					<details><summary>可以直接在網站付款嗎？</summary><p>目前網站不提供會員登入或線上付款。請先透過聯絡管道提出需求，後續流程將由專人說明。</p></details>
+				</div></div></section>
 
-				<section id="plans" class="winter-section winter-plans">
-					<div class="container">
-						<header class="winter-section__header">
-							<p class="winter-kicker">2026–27 SEASON PLANS</p>
-							<h2>服務方案</h2>
-							<p>以下為第一版方案方向；正式內容、價格與可預約地點確認後公告。</p>
-						</header>
-						<div class="winter-plan-grid">
-							<article class="winter-plan-card">
-								<p class="winter-plan-label">初次體驗</p>
-								<h3>雪地初見方案</h3>
-								<p>適合第一次滑雪、希望先建立安心感與基礎認識的旅客。</p>
-								<ul>
-									<li>雙板或單板擇一</li>
-									<li>行前需求確認</li>
-									<li>私人教學安排</li>
-								</ul>
-								<strong class="winter-price">價格待公告</strong>
-							</article>
-							<article class="winter-plan-card winter-plan-card--featured">
-								<p class="winter-plan-label">完整雪日</p>
-								<h3>一日專屬滑雪方案</h3>
-								<p>適合希望保有彈性，以自己的步調享受完整雪日的同行旅伴。</p>
-								<ul>
-									<li>雙板或單板擇一</li>
-									<li>私人教學與雪地陪伴</li>
-									<li>行程細節個別討論</li>
-								</ul>
-								<strong class="winter-price">價格待公告</strong>
-							</article>
-							<article class="winter-plan-card">
-								<p class="winter-plan-label">影像加購</p>
-								<h3>雪地記憶方案</h3>
-								<p>將滑行與旅伴互動化為影像，適合重視旅程紀錄的旅客。</p>
-								<ul>
-									<li>拍攝需求事前討論</li>
-									<li>雪地動態與旅伴互動</li>
-									<li>交付內容另行確認</li>
-								</ul>
-								<strong class="winter-price">價格待公告</strong>
-							</article>
-						</div>
-						<p class="winter-plan-note">※ 雪票、裝備、交通、保險及其他費用是否包含，將於正式方案公告時逐項說明。</p>
-					</div>
-				</section>
-
-				<section id="faq" class="winter-section winter-faq">
-					<div class="container winter-faq__layout">
-						<header>
-							<p class="winter-kicker">FAQ</p>
-							<h2>出發前，<br />你可能想知道</h2>
-						</header>
-						<div class="winter-faq__items">
-							<details>
-								<summary>完全沒有滑雪經驗，也適合嗎？</summary>
-								<p>可以。諮詢時請告訴我們是否第一次接觸雪地、同行人數與年齡組成，我們會依實際條件討論合適的安排。</p>
-							</details>
-							<details>
-								<summary>雙板與單板應該怎麼選？</summary>
-								<p>兩者有不同的入門感受。你可以依旅行目標、過往運動經驗與同行者選擇；還不確定時，也可先在諮詢中討論。</p>
-							</details>
-							<details>
-								<summary>目前可以在哪些北海道雪場預約？</summary>
-								<p>服務雪場與商業活動相關許可仍在確認中，將依各雪場規範及實際可預約狀況安排。目前不預先承諾特定雪場。</p>
-							</details>
-							<details>
-								<summary>方案價格何時公布？</summary>
-								<p>價格待公告。待服務內容、地點與相關條件確認後，將公布正式方案及費用包含項目。</p>
-							</details>
-							<details>
-								<summary>可以直接在網站付款嗎？</summary>
-								<p>目前網站不提供會員登入或線上付款。請先透過原網站聯絡管道提出需求，後續流程將由專人說明。</p>
-							</details>
-						</div>
-					</div>
-				</section>
-
-				<section id="contact" class="winter-contact">
-					<div class="container winter-contact__inner">
-						<p class="winter-kicker">START A CONVERSATION</p>
-						<h2>先聊聊你想像中的雪日</h2>
-						<p class="winter-contact__invite">你可選擇喜歡的方式跟我們聯繫</p>
-						<p>告訴我們預計日期、人數、滑雪經驗，以及希望保留的旅程片刻。正式價格與可預約內容確認後，我們會再與你確認後續安排。</p>
-						<div class="winter-contact__links">
-							<a class="winter-contact-link winter-contact-link--line" href="https://line.me/ti/p/44Ej79UKgJ" target="_blank" rel="noopener noreferrer" aria-label="透過 LINE 加入好友並諮詢">
-								<span class="icon brands fa-line" aria-hidden="true"></span>
-							</a>
-							<a class="winter-contact-link winter-contact-link--email" href="mailto:info@yukimiichie.com" aria-label="寄送 Email 至 info@yukimiichie.com">
-								<span class="icon solid fa-envelope" aria-hidden="true"></span>
-							</a>
-							<a class="winter-contact-link winter-contact-link--instagram" href="https://www.instagram.com/yukimiichie/" target="_blank" rel="noopener noreferrer" aria-label="前往雪見一會 Instagram">
-								<span class="icon brands fa-instagram" aria-hidden="true"></span>
-							</a>
-							<a class="winter-contact-link winter-contact-link--facebook" href="https://www.facebook.com/profile.php?id=61581657126616" target="_blank" rel="noopener noreferrer" aria-label="前往雪見一會 Facebook">
-								<span class="icon brands fa-facebook-f" aria-hidden="true"></span>
-							</a>
-						</div>
-					</div>
-				</section>
+				<section id="contact" class="winter-contact winter-contact--reference"><div class="container winter-contact__inner"><p class="winter-kicker">START A CONVERSATION</p><h2>告訴我們你的日期、人數與需求</h2><p class="winter-contact__invite">取得雪見一會的專屬報價</p><p>你可選擇喜歡的方式跟我們聯繫。初版報價、實際內容與可預約狀況確認後，我們會再與你說明後續安排。</p><div class="winter-contact__links">
+					<a class="winter-contact-link winter-contact-link--line" href="https://line.me/ti/p/44Ej79UKgJ" target="_blank" rel="noopener noreferrer" aria-label="透過 LINE 加入好友並諮詢"><span class="icon brands fa-line" aria-hidden="true"></span></a>
+					<a class="winter-contact-link winter-contact-link--email" href="mailto:info@yukimiichie.com" aria-label="寄送 Email 至 info@yukimiichie.com"><span class="icon solid fa-envelope" aria-hidden="true"></span></a>
+					<a class="winter-contact-link winter-contact-link--instagram" href="https://www.instagram.com/yukimiichie/" target="_blank" rel="noopener noreferrer" aria-label="前往雪見一會 Instagram"><span class="icon brands fa-instagram" aria-hidden="true"></span></a>
+					<a class="winter-contact-link winter-contact-link--facebook" href="https://www.facebook.com/profile.php?id=61581657126616" target="_blank" rel="noopener noreferrer" aria-label="前往雪見一會 Facebook"><span class="icon brands fa-facebook-f" aria-hidden="true"></span></a>
+				</div></div></section>
 			</main>
-
-			<footer class="winter-footer">
-				<div class="container">
-					<a href="index.html" class="winter-footer__brand">雪見一會</a>
-					<p>Snow &amp; Culture Experience in Japan</p>
-					<p class="winter-footer__legal">&copy; 雪見一會合同会社</p>
-				</div>
-			</footer>
+			<footer class="winter-footer"><div class="container"><a href="index.html" class="winter-footer__brand">雪見一會</a><p>Snow &amp; Culture Experience in Japan</p><p class="winter-footer__legal">&copy; 雪見一會合同会社</p></div></footer>
 		</div>
-
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.dropotron.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/browser.min.js"></script><script src="assets/js/breakpoints.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script><script src="assets/js/home-showcase.js"></script>
 	</body>
 </html>
