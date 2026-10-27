@@ -3549,3 +3549,217 @@ body.no-sidebar #main > header > p {
 		font-size: clamp(1.4em, 6.4vw, 1.85em);
 	}
 }
+
+/* 2026-10 responsive banner and homepage carousel refinements. */
+
+/* Keep every homepage carousel card level without changing image dimensions. */
+.homepage .carousel article {
+	vertical-align: top;
+}
+
+.homepage .carousel article header {
+	display: flex;
+	min-height: 3.25em;
+	align-items: center;
+	justify-content: center;
+}
+
+.homepage .carousel article header h3 {
+	margin: 0;
+}
+
+.homepage .carousel article > p {
+	min-height: 6.2em;
+	margin-bottom: 0;
+}
+
+/* Use the finished high-resolution ski and snowboard visual instead of the
+   upscaled 843px source image. */
+.home-showcase__panel--ski,
+.service-hero--ski {
+	background-image: linear-gradient(90deg, rgba(5, 24, 39, 0.84), rgba(5, 24, 39, 0.08)), url("../../images/optimized/winter-hero-ski-snowboard-v11.png");
+	background-position: center 58%;
+}
+
+/* Restore readable top navigation sizing on desktop. */
+.site-nav__links a,
+.winter-landing-page .site-nav__links a {
+	font-size: 1em;
+}
+
+/* 16:10 desktop screens crop portrait-origin photos heavily when using cover.
+   Bias the focal point upward so faces and key subjects remain visible. */
+@media screen and (min-width: 737px) and (max-aspect-ratio: 8/5) {
+	.home-showcase #header {
+		background-position: center 28%;
+	}
+
+	.home-showcase__panel--winter {
+		background-position: center 54%;
+	}
+
+	.home-showcase__panel--ski,
+	.service-hero--ski {
+		background-position: center 54%;
+	}
+
+	.home-showcase__panel--photo,
+	.service-hero--photo {
+		background-position: center 40%;
+	}
+
+	.home-showcase__panel--culture,
+	.service-hero--culture {
+		background-position: center 36%;
+	}
+
+	.home-showcase__panel--membership,
+	.membership-hero {
+		background-position: center 40%;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.site-nav__links a,
+	.winter-landing-page .site-nav__links a {
+		font-size: 0.78em;
+	}
+
+	.homepage .carousel article header {
+		min-height: 3em;
+	}
+
+	.homepage .carousel article > p {
+		min-height: 6.6em;
+	}
+}
+
+/* On phones, photo, culture and membership pages follow the winter campaign
+   pattern: image first, then a calm dark text panel. This prevents long titles
+   from breaking across the subject in the photograph. */
+@media screen and (max-width: 480px) {
+	.snow-photo-page .site-nav,
+	.japan-culture-page .site-nav,
+	.membership-page .site-nav {
+		position: relative;
+		top: auto;
+		right: auto;
+		left: auto;
+		min-height: 0;
+		padding: 0.55em 0.75em;
+		background: #f7fbfd;
+		color: #173a55;
+	}
+
+	.snow-photo-page .site-nav__links,
+	.japan-culture-page .site-nav__links,
+	.membership-page .site-nav__links {
+		gap: 0.9em;
+		justify-content: flex-start;
+		overflow-x: auto;
+	}
+
+	.snow-photo-page .site-nav__links a,
+	.japan-culture-page .site-nav__links a,
+	.membership-page .site-nav__links a {
+		color: #173a55;
+		font-size: 0.78em;
+		text-shadow: none;
+		white-space: nowrap;
+	}
+
+	.snow-photo-page .service-hero,
+	.japan-culture-page .service-hero,
+	.membership-page .membership-hero {
+		height: 620px;
+		min-height: 620px;
+		max-height: 620px;
+		align-items: flex-end;
+		background-color: #051827;
+		background-repeat: no-repeat;
+	}
+
+	.snow-photo-page .service-hero {
+		background-position: 54% top;
+		background-size: auto 55%;
+	}
+
+	.japan-culture-page .service-hero {
+		background-position: 50% top;
+		background-size: auto 55%;
+	}
+
+	.snow-photo-page .service-hero::before,
+	.japan-culture-page .service-hero::before {
+		background: linear-gradient(180deg, rgba(5, 24, 39, 0) 0%, rgba(5, 24, 39, 0) 45%, rgba(5, 24, 39, 0.94) 56%, #051827 100%);
+	}
+
+	.snow-photo-page .service-hero__inner,
+	.japan-culture-page .service-hero__inner {
+		padding: 20.5em 1.1em 1.35em;
+	}
+
+	.snow-photo-page .service-hero h1,
+	.japan-culture-page .service-hero h1 {
+		max-width: 100%;
+		margin: 0.1em 0 0.35em;
+		font-size: clamp(1.45em, 7.2vw, 1.9em);
+		line-height: 1.18;
+		letter-spacing: 0.02em;
+	}
+
+	.snow-photo-page .service-hero h1 br,
+	.japan-culture-page .service-hero h1 br {
+		display: none;
+	}
+
+	.snow-photo-page .service-hero__lead,
+	.japan-culture-page .service-hero__lead {
+		font-size: 0.78em;
+		line-height: 1.55;
+	}
+
+	.snow-photo-page .service-hero .winter-actions,
+	.japan-culture-page .service-hero .winter-actions {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.55em;
+		margin-top: 0.9em;
+	}
+
+	.snow-photo-page .service-hero .winter-actions .button,
+	.japan-culture-page .service-hero .winter-actions .button {
+		width: 100%;
+		min-width: 0;
+		padding: 0 0.7em;
+		font-size: 0.72em;
+	}
+
+	.membership-page .membership-hero {
+		background-image: linear-gradient(180deg, rgba(5, 24, 39, 0) 0%, rgba(5, 24, 39, 0) 45%, rgba(5, 24, 39, 0.94) 56%, #051827 100%), url("../../images/optimized/pic04-1200.jpg");
+		background-position: center, 58% top;
+		background-size: 100% 100%, auto 55%;
+	}
+
+	.membership-page .membership-hero__inner {
+		align-self: flex-end;
+		padding: 20.5em 1.1em 1.45em;
+	}
+
+	.membership-page .membership-hero h1 {
+		margin-bottom: 0.35em;
+		font-size: clamp(1.55em, 7.4vw, 2em);
+		line-height: 1.16;
+	}
+
+	.membership-page .membership-hero__inner > p:not(.winter-eyebrow) {
+		margin-bottom: 0.75em;
+		font-size: 0.8em;
+		line-height: 1.5;
+	}
+
+	.membership-page .membership-hero .button {
+		margin-top: 0.3em;
+		font-size: 0.78em;
+	}
+}
