@@ -1,0 +1,115 @@
+.language-switcher {
+	position: static;
+	z-index: 1;
+	flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 0.38rem 0.65rem;
+	border: 1px solid rgba(255, 255, 255, 0.55);
+	border-radius: 999px;
+	background: rgba(18, 29, 38, 0.82);
+	box-shadow: 0 0.35rem 1.1rem rgba(0, 0, 0, 0.18);
+	color: #fff;
+	font: 600 0.75rem/1.2 "Source Sans Pro", sans-serif;
+	backdrop-filter: blur(8px);
+	margin-left: 0.85rem;
+}
+
+.language-switcher button {
+	appearance: none;
+	border: 0;
+	padding: 0.12rem 0.18rem;
+	background: transparent;
+	color: rgba(255, 255, 255, 0.7);
+	font: inherit;
+	cursor: pointer;
+}
+
+.language-switcher button:hover,
+.language-switcher button:focus-visible,
+.language-switcher button.is-active {
+	color: #fff;
+	text-decoration: underline;
+	text-underline-offset: 0.22rem;
+}
+
+/* Keep the first navigation item visible when English labels need more room. */
+.site-nav__links {
+	justify-content: flex-start;
+	gap: clamp(0.8rem, 2vw, 2rem);
+}
+
+/* English copy varies in length; keep paired service cards geometrically even. */
+html[lang="en"] .service-feature-grid {
+	grid-template-rows: repeat(2, 18rem);
+	grid-auto-rows: 18rem;
+	align-items: stretch;
+	gap: 0.9rem;
+}
+
+html[lang="en"] .service-feature-card {
+	display: flex;
+	height: 18rem;
+	min-height: 0;
+	margin: 0;
+	padding: 1.55rem 1.65rem;
+	box-sizing: border-box;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+html[lang="en"] .service-feature-card h3 {
+	min-height: 1.5em;
+}
+
+html[lang="en"] .winter-service-price-card,
+html[lang="en"] .membership-card {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.english-support-note {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0.25rem 0 1rem;
+	padding: 0.5rem 0.85rem;
+	border: 1px solid rgba(255, 255, 255, 0.38);
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.1);
+	color: #fff;
+	font-size: 0.92rem;
+	font-weight: 600;
+}
+
+.english-support-note span {
+	color: #e1bf82;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 736px) {
+	.site-nav {
+		padding-right: 0.55rem;
+		padding-left: 0.55rem;
+	}
+
+	.language-switcher {
+		margin-left: 0.55rem;
+		padding: 0.32rem 0.5rem;
+		font-size: 0.68rem;
+	}
+
+	html[lang="en"] .service-feature-grid {
+		grid-template-rows: none;
+		grid-auto-rows: auto;
+		gap: 0.9rem;
+	}
+
+	html[lang="en"] .service-feature-card,
+	html[lang="en"] .winter-service-price-card,
+	html[lang="en"] .membership-card {
+		height: auto;
+		overflow: visible;
+	}
+}
